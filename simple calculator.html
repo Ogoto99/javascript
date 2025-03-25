@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+        <h1 class="text-2xl font-bold text-center mb-6">Simple Calculator</h1>
+        <div class="mb-4">
+            <input id="input1" type="number" placeholder="Enter first number" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div class="mb-4">
+            <input id="input2" type="number" placeholder="Enter second number" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div class="grid grid-cols-4 gap-2 mb-4">
+            <button onclick="calculate('+')" class="bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600">+</button><!-- Addition -->
+            <button onclick="calculate('-')" class="bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600">-</button><!-- Subtraction -->
+            <button onclick="calculate('*')" class="bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600">×</button><!-- Multiplication -->
+            <button onclick="calculate('/')" class="bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600">÷</button><!-- Division -->
+            <button onclick="calculate('%')" class="bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600">%</button><!-- Modulus -->
+        </div>
+        <div>
+            <input id="result" type="text" placeholder="Result" readonly class="w-full p-3 border rounded-lg bg-gray-100 focus:outline-none">
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

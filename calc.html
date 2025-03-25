@@ -1,0 +1,38 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 20px;
+    }
+    input, button {
+        padding: 10px;
+        margin: 5px;
+        font-size: 20px;
+    }
+    p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+<h1>Simple Calculator</h1>
+<p>Enter numbers</p>
+<input type="number" id="firstNumber" placeholder="Enter first number">
+<input type="number" id="secondNumber" placeholder="Enter second number">
+<button onclick="calculateSum()">Add</button>
+<button onclick="calculateSubt()">Subtract</button>
+<button onclick="calculateMult()">Multiply</button>
+<button onclick="calculateDiv()">Divide</button>
+<button onclick="clearFields()">Clear</button>
+<p id="result"></p>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
