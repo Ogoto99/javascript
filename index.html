@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Script tags-->
+     <script>
+        // Basic Javascript syntax
+        let message = "We are learning javascript";
+        console.log(message);
+        // This is a single line comment
+
+        /* This is a multi-line comment*/
+        // Variables
+        // A variable is a container used to store data
+        // Variable declaration
+        // Let and var are used on mutable data
+        //var Name = "John";
+        //var name = "John";
+        let Name = "John";
+        Name = "James";//variable intialization and assignment
+        // Const used for declaring immutable data
+        const name = "John";
+        //const name = "James";
+        console.log(Name);
+        
+        //changing variables
+        let Nationality = "American";
+        Nationality = "Kenyan";
+        console.log(Nationality);
+        
+        //camelCase
+       let fullName = "Melekh Ogoto";
+       let age = 18 + " years old";
+       let isStudent = "yes!";
+       console.log(fullName,age,isStudent);
+
+       //snake_case
+       let full_name = "Melekh Ogoto";
+       age = 19 + " years old";
+       let is_student = "No!";
+       console.log(full_name,age,is_student);
+       // Data types
+       // Primitive data types
+
+       //1. Strings
+       let string = "This is a string";
+       let num = 43;
+       let str = 'This is another string';
+       let str1 = `Yet another string`;
+       console.log(string, num, str, str1);
+       console.log(typeof(num));
+
+       //2. Undefined
+       let j;//when a variable is declared but not assigned a value
+
+       //3. Number
+       let int = 16;//values which are numbers without a decimal
+       let float = 13.6;//values which are numbers with a decimal(floats)
+       let bigInt = 648573628n//values which are very large
+
+       //4. Booleans take true or false values
+       is_student = true;
+       
+       //5. Null when intentionally whats to omit a value 
+       let status = null;
+
+       //6. Symbol takes in unique values as identifiers
+       
+
+       //exercise on variables
+       let string1 = "Melekh Ogoto";
+       let float1 = 177.18;
+       let coding = true;
+       let m;
+       let occupation = null;
+       console.log(string1, float1, coding, m, occupation);
+
+
+       //operators
+       //1. Arithmetic operators
+       // mathematical function
+       let a = 15;
+       let b = 3;
+       let c = 10;
+       const sum = a + b;//addition
+       const diff = a - b;//subtraction
+       const prod = a * b;//multiplication
+       const div = a / b;//division
+       const mod = c % b;//modulus gives the remainer of a division operation
+       console.log(sum, diff, prod, div, mod);
+
+       //2. comparison operators
+       console.log(a == b);//comparison
+       console.log(a === b);//strict equality comparison
+       console.log(a > b);//greater than
+       console.log(a < b);//less than
+       console.log(b <= a)//less than or equal to
+       console.log(a >= b)//greater than or equal to
+       console.log(a != b);//not equal(!)
+       console.log(a !== b)//strictly not equal 
+
+       //3. logical operators
+       const d = 15, e = 30;
+       console.log(d && e);//And operator
+       console.log(a != b);//not equal(!)
+       console.log(a !== b)//strictly not equal
+       console.log(d > 0 && e > 0);
+       console.log(d > 0 || e > 0); 
+
+       //4. assignment operators
+       a = 50;
+       console.log(a);
+
+       //5. conditional operators
+       //ternary operator
+       age = 18;
+       status = age >= 18 ? "Adult" : "Minor";
+       console.log(status);
+       // condition ? expression1 : expression2
+
+       //6. bitwise operators
+       const res = 5 & 1;//Bitwise AND
+       console.log(res);
+
+       //7. Unary operator
+       let y = 10;
+       console.log(++y);//increment
+       console.log(--y);//decrement
+
+       // String operations
+       //Concatenation - addition of strings
+       const s = "Welcome" + " " + "to Javascript Programming!";
+       console.log(s);
+
+       // String methods
+      let str2 = "      Welcome to our Javasript Programming.";
+      let len = str2.length//checking length of a string
+      console.log(len);
+
+      //extracting characters from a string
+      let ch = str2.charAt(20);
+      console.log(ch)
+      let cod = str2.charCodeAt(0);
+      console.log(cod);
+
+      //slice extract parts of a string
+      let part = str2.slice(-25, -3);
+      console.log(part);
+
+      //subsrting
+      let sub = str2.substring(5, 30);
+      console.log(sub);
+
+      //capitalize
+      let cap = str2.toUpperCase();
+      console.log(cap);
+      let low = str2.toLowerCase();
+      console.log(low);
+
+       //concat joins two or more strings
+       let str4 = "Javascript programming is fun!   ";
+       let str5 = str2.concat(" ", s, "", str4);
+       console.log(str5);
+
+       //trim remove whitespaces
+       let str6 = str5.trim();
+       console.log(str6);
+
+      //trial
+      let str3 = "Basics of Javascript programming";
+      let len1 = str3.length
+      console.log(len1)
+
+      let part1 = str3.slice(5, 10);
+      console.log(part1);
+
+      let ch1 = str3.charAt(10);
+      let cod1 = str3.charCodeAt(5)
+      console.log(ch1, cod1);
+
+      let sub1 = str3.substring(4, 13)
+      console.log(sub1);
+
+      let cap1 = str3.toUpperCase();
+      console.log(cap1);
+
+      let low1 = str3.toLowerCase();
+      console.log(low1);
+
+
+      //Include checks if a given string has some characters
+      if (str4.includes("fun")){
+        console.log("Found fun");
+      }
+
+      //startswith checks if a string starts with given character
+      str4.startsWith("Ja");
+      console.log(str4.startsWith("Ja"));
+
+      //endswith checks if a string ends with a given character
+      str4.endsWith("fun");
+      console.log(str4.endsWith("fun"));
+
+      //indexof checks for specific index of a string or character
+      str2.indexOf("Welcome");
+      console.log(str2.indexOf("Welcome"));
+
+      //replace changes a string 
+      let quote = "You are enjoying Javascript";
+      quote = quote.replace("Javascript", "Python");
+      console.log(quote); 
+      quote = quote.replaceAll("", "You are not enjoying the lesson");
+      console.log(quote);
+
+      //split method returns each single character in a string
+      const mystr = "Hello world";
+      mystr.split("Hello world");
+      console.log(mystr.split(""));
+
+      //reverse
+      const reversedStr = mystr.split();
+      mystr.split().reverse();
+      reversedStr.reverse();
+      console.log(reversedStr);
+
+      //if statement
+      //basic syntax
+      //if (expression) {
+        //statements to be executed if the expression is true
+      //}
+
+      let result;
+      let Age = 16;
+      if (Age > 18) {
+        result = "You are eligible to drive"
+      }
+      //console.log(result);
+      // //else
+      if (Age > 18) {
+        result = "You are eligible to drive"
+      }else {
+        result = "You are not eligible to drive"
+      };
+      console.log(result);
+      
+
+      let requirement;
+      let grade = 60;
+      if (grade > 70) {
+        grade = "You have passed"
+      }else {
+        grade = "You have failed"
+      };
+      console.log(grade);
+      
+      //else if
+      let book = "Python Programming"
+      let resp;
+      if (book == "Physics") {
+        resp = "Physics book found"
+      }else if (book ==  "Biology") {
+        resp = "Biology book found"
+      }else if (book == "Python Programming") {
+        resp = "Python Programming"
+      }else {
+        resp = "Untitled book"
+      };
+      console.log(resp);
+      
+      let game = "Soccer"
+      let pick;
+      if (game == "Basketball") {
+        pick = "Basketball has a vacancy"
+      }else if (game ==  "Hockey") {
+        pick = "Hockey has a vacancy"
+      }else if (game == "Rugby") {
+        pick = "Rugby has a vacancy"
+      }else {
+        pick = "Join the cheering squad"
+      };
+      console.log(pick);
+
+      //Loops
+      //while loop executes as long as condition is true until it becomes false
+      //Basic syntax
+      //while (condition) {
+        //code to execute while the condition is true
+      //}
+      let count = 0;
+      while (count < 10) {
+        count++
+      }
+      console.log(count);
+
+      //Do while loop
+      //syntax
+      //do {
+        //code to be executed
+      //} while (condition)
+      let count1 = 0;
+      do {
+        count1++
+      }while (count1 < 5);
+      console.log(count1);
+
+      //A for loop repeats until a specified condition evalutes to false
+      //syntax
+      //for (intialization; condition; incremental/decremental step) {
+      //code to be executed
+      //}
+
+      for (let i = 0; i < 10; i++) {
+        console.log(i);
+      }
+
+      //Function - a block of code that can be reused
+      //syntax
+      //function funName(parameter1, parameter2, parameter3) {
+        //code to be executed
+      //}
+      function sayHello() {
+        alert("Hello and welcome to Javascript Programming")
+      }
+
+      //sayHello()//calling a function
+
+      const mySum = function(x, y) {
+        const result = x + y;
+        document.getElementById("output").innerText = `Result: ${result}`
+        return result;
+      }
+
+      const myDiff = function(x, y) {
+        const result = x - y;
+        document.getElementById("output").innerText = `Result: ${result}`
+        return result
+      }
+
+      const myProd = function(x, y) {
+        const result = x * y;
+        document.getElementById("output").innerText = `Result: ${result}`
+        return result
+      }
+
+      const myDiv = function(x, y) {
+        const result = x / y;
+        document.getElementById("output").innerText = `Result: ${result}`
+        return result
+      }
+     </script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+  <div class="bg-white p-8 rounded-2xl shadow-lg text-center space-y-6">
+    <p class="text-lg font-semibold text-gray-700">Click the following button to call the function</p>
+    <form>
+       <input 
+          type="button" 
+          onclick="mySum(4, 5)"
+          value="addition" 
+          class="px-6 py-2 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 transition duration-300 cursor-pointer"
+       >
+       <input 
+          type="button" 
+          onclick="myDiff(4, 5)"
+          value="subtraction" 
+          class="px-6 py-2 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 transition duration-300 cursor-pointer"
+       >
+       <input 
+          type="button" 
+          onclick="myProd(4, 5)"
+          value="product" 
+          class="px-6 py-2 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 transition duration-300 cursor-pointer"
+       >
+       <input 
+          type="button" 
+          onclick="myDiv(4, 5)"
+          value="division" 
+          class="px-6 py-2 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 transition duration-300 cursor-pointer"
+       >
+    </form>
+    <p id="output" class="text-lg font-md text-green-600"></p>
+    <p class="text-sm text-gray-500">Use different text in the write method and then try ...</p>
+  </div>
+</body>
+</html>
